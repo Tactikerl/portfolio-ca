@@ -1,14 +1,14 @@
-import JSFCAImage from "/images/jsfca.png";
-import PE2Image from "/images/pe2.png";
-import SP2Image from "/images/sp2.png";
-import KarlImage from "/images/karl.jpg";
+import jsfca from "/images/jsfca.png";
+import pe2 from "/images/pe2.png";
+import sp2 from "/images/sp2.png";
+import karl from "/images/karl.jpg";
 
 
 
 const profile = {
   name: 'Karl-Morten Kvammen',
   description: 'Junior Frontend Developer looking for employment and excited for new experiences and skills',
-  image: KarlImage,
+  image: karl,
   github: 'https://github.com/Tactikerl',
   email: 'karlmkvammen@hotmail.com'
 };
@@ -17,21 +17,21 @@ const projects = [
     {
       title: 'Semester Project 2',
       description: 'This application is developed to emulate a fictional auction house. Users can register with a @stud.noroff email address to create listings with fictional items and bid on listings from other users. Registered users can also check their profile to see acumulated credits, how many listings they have made and how many auctions they have won. non registered users may browse the listings front page and search through them, but have to log in or register an account to access the full app.',
-      image: SP2Image,
+      image: sp2,
       repo: 'https://github.com/Tactikerl/SP2-Noroff-Auction-Application.git',
       liveSite: 'https://tactikerl.github.io/SP2-Noroff-Auction-Application/'
     },
     {
       title: 'JavaScript Frameworks CA',
       description: 'This is my JavaScript Frameworks CA. In this CA i have created a e-commerce site using React. The site is a fictional site for an unnamed company, and the main focus of the CA is to show my understanding of React and how to use it to create a site for e-commerce.',
-      image: JSFCAImage,
+      image: jsfca,
       repo: 'https://github.com/Tactikerl/eCommmerce-app-CA.git',
       liveSite: 'https://storied-twilight-7cfba6.netlify.app/'
     },
     {
       title: 'Project Exam 2',
       description: 'This is my Project Exam for the fourth and last semester of FED(Front-end Development) at Noroff. The exam took 7 weeks and i have tried to create a accommodation booking site following User Stories provided in the exam brief we received.',
-      image: PE2Image,
+      image: pe2,
       repo: 'https://github.com/Tactikerl/pe2-react-app.git',
       liveSite: 'https://pe2-kmk-holidaze.netlify.app/'
     }
