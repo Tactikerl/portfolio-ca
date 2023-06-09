@@ -83,7 +83,7 @@ const projects = [
   );
 
 const PortfolioPage = () => (
-  <div className="p-6 flex flex-col items-center bg-purple-950 h-full">
+  <div className="p-6 flex flex-col items-center bg-purple-950">
     <ProfileCard {...profile} />
     {projects.map((project) => (
       <ProjectCard key={project.repo} {...project} />
