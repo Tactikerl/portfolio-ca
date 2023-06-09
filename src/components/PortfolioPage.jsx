@@ -38,17 +38,16 @@ const projects = [
   ];
 
   const Link = ({ href, children }) => (
-    <a href={href} className="text-blue-500 hover:text-blue-700 underline" target="_blank" rel="noopener noreferrer">{children}</a>
+    <a href={href} className="text-blue-500 hover:text-blue-700 underline transition-colors duration-200" target="_blank" rel="noopener noreferrer">{children}</a>
   );
-
  
 
   const ProjectCard = ({ image, title, description, repo, liveSite }) => (
-    <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md w-full md:w-2/3 lg:w-2/3 xl:w-2/3 min-h-96 md:min-h-screen/2 m-3">
-      <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 order-2 md:order-1">
-        <img className="w-full h-full object-cover rounded-l-lg" src={image} alt={title} />
+    <div className="flex flex-col bg-white rounded-xl shadow-md w-full md:w-2/3 lg:w-1/2 xl:w-1/3 min-h-96 md:min-h-screen/2 m-3 transition-all duration-200 ease-in-out transform hover:scale-105">
+      <div className="w-full h-48 md:h-64 flex-shrink-0">
+        <img className="w-full h-full object-cover rounded-t-lg" src={image} alt={title} />
       </div>
-      <div className="p-8 flex flex-col justify-between flex-grow order-1 md:order-2">
+      <div className="p-8 flex flex-col justify-between flex-grow">
         <div className="mb-4">
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{title}</div>
           <p className="mt-2 text-gray-500">{description}</p>
@@ -67,7 +66,7 @@ const projects = [
   );
   
   const ProfileCard = ({ image, name, description, email, github }) => (
-    <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md  max-w-sm md:max-w-md mx-auto md:mx-0 md:min-h-screen/4 m-3">
+    <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md max-w-sm md:max-w-md mx-auto md:mx-0 md:min-h-screen/4 m-3 transition-all duration-200 ease-in-out transform hover:scale-105">
       <div className="rounded-lg flex items-center justify-center bg-gray-100 md:flex-basis-1/2 ">
         <img className=" md:w-full rounded-l-lg md:h-full" src={image} alt={name} />
       </div>
@@ -82,14 +81,15 @@ const projects = [
     </div>
   );
 
-const PortfolioPage = () => (
-  <div className="p-6 flex flex-col items-center bg-purple-950 min-h-screen">
-    <ProfileCard {...profile} />
-    {projects.map((project) => (
-      <ProjectCard key={project.repo} {...project} />
-    ))}
-  </div>
-);
+  const PortfolioPage = () => (
+    <div className="p-6 flex flex-col items-center min-h-screen">
+      <ProfileCard {...profile} />
+      {projects.map((project) => (
+        <ProjectCard key={project.repo} {...project} />
+      ))}
+    </div>
+  );
+  
   
   
   
