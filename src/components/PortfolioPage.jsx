@@ -1,4 +1,4 @@
-import JSFCAImage from "../assets/images/JSF-CA.png";
+import JSFCAImage from "../assets/images/JSFCA.png";
 import PE2Image from "../assets/images/PE2.png";
 import SP2Image from "../assets/images/SP2.png";
 import KarlImage from "../assets/images/Karl.jpg";
