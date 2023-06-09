@@ -46,7 +46,7 @@ const projects = [
   const ProjectCard = ({ image, title, description, repo, liveSite }) => (
     <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md w-full md:w-2/3 lg:w-2/3 xl:w-2/3 min-h-96 md:min-h-screen/2 m-3">
       <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 order-2 md:order-1">
-        <img className="w-full h-full object-cover rounded-lg" src={image} alt={title} />
+        <img className="w-full h-full object-cover rounded-l-lg" src={image} alt={title} />
       </div>
       <div className="p-8 flex flex-col justify-between flex-grow order-1 md:order-2">
         <div className="mb-4">
@@ -69,7 +69,7 @@ const projects = [
   const ProfileCard = ({ image, name, description, email, github }) => (
     <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md  max-w-sm md:max-w-md mx-auto md:mx-0 md:min-h-screen/4 m-3">
       <div className="rounded-lg flex items-center justify-center bg-gray-100 md:flex-basis-1/2 ">
-        <img className=" md:w-full rounded-lg md:h-full" src={image} alt={name} />
+        <img className=" md:w-full rounded-l-lg md:h-full" src={image} alt={name} />
       </div>
       <div className="p-8 flex flex-col justify-between flex-grow md:flex-basis-1/2">
         <div className="mb-4">
