@@ -1,7 +1,7 @@
-import JSFCAImage from "../assets/images/jsfca.png";
-import PE2Image from "../assets/images/pe2.png";
-import SP2Image from "../assets/images/sp2.png";
-import KarlImage from "../assets/images/karl.jpg";
+import JSFCAImage from "/images/jsfca.png";
+import PE2Image from "/images/pe2.png";
+import SP2Image from "/images/sp2.png";
+import KarlImage from "/images/karl.jpg";
 
 
 
