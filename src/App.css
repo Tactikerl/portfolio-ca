@@ -1,7 +1,53 @@
-html, body, #root {
-    height: 100%;
-  }
+html,
+body,
+#root {
+  height: 100%;
+}
 
-  body {
-    background: linear-gradient(to right, #667eea, #764ba2);
-  }
+body {
+  background: linear-gradient(to right, #667eea, #764ba2),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 95%,
+      #fff 95%,
+      #fff 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 95%,
+      #fff 95%,
+      #fff 100%
+    );
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+}
+
+.App {
+  background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 9px,
+      #000 9px,
+      #000 10px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 9px,
+      #000 9px,
+      #000 10px
+    );
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.circuit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("path-to-your-circuit-image.png") no-repeat center;
+  pointer-events: none; /* So it doesn't interfere with other interactions */
+  transform: translate(-50%, -50%); /* Center the circuit on the mouse */
+}
